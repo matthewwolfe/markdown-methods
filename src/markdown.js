@@ -44,9 +44,9 @@ exports.table = object => {
         console.error('No data specified');
     }
 
-    const columns = `\n${object.columns.map(column => `| ${column} `).join('')}|\n`;
+    const columns = `${object.columns.map(column => `| ${column} `).join('')}|\n`;
     const separator = `${object.columns.map(column => '| - ').join('')}|\n`;
-    const data = object.data.map(row => `| ${row.join(' | ')} |`).join('\n');
+    const data = `${object.data.map(row => `| ${row.join(' | ')} |`).join('\n')}\n`;
 
     markdown.push(columns + separator + data);
 };
