@@ -46,7 +46,7 @@ exports.table = object => {
 
     const columns = `\n${object.columns.map(column => `| ${column} `).join('')}|\n`;
     const separator = `${object.columns.map(column => '| - ').join('')}|\n`;
-    const data = object.data.map(row => `| ${row.join(' | ')} |\n`);
+    const data = object.data.map(row => `| ${row.join(' | ')} |`).join('\n');
 
     markdown.push(columns + separator + data);
 };
