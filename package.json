@@ -7,5 +7,6 @@
     "test": "node tests/test.js"
   },
   "author": "Matthew Wolfe",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "matthewwolfe/markdown-methods",
 }
